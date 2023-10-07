@@ -39,7 +39,7 @@ st.subheader(
 # About
 expander_bar = st.expander("**About**")
 expander_bar.markdown("""
-***:orange[Usage:]*** This web application retrieves cryptocurrency prices for the top 100 cryptocurrencies from CoinMarketCap. Users can select a currency for price comparison, choose cryptocurrencies to display, and sort data as needed. It also allows users to search for a specific cryptocurrency and view a candlestick chart of its historical data.
+***:orange[Usage:]*** This web application retrieves cryptocurrency prices for the top 100 cryptocurrencies from CoinMarketCap. Users can select a currency for price comparison, choose cryptocurrencies to display, and sort data as needed. It also allows users to search for a specific cryptocurrency and view a Bar plot of % Price Change of its historical data.
 
 **:orange[Created By:]** :blue[Aditya Singh Amber]  from the B.C.A course at Jeevandeep Mahavidyalya.
 """)
