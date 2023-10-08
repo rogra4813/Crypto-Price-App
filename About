@@ -1,0 +1,25 @@
+Here's a simple summary of the application:
+
+Imagine a website that helps you explore and understand cryptocurrency prices, kind of like checking stock prices but for digital money. Even if you're just 15 years old, you can use it easily.
+
+**How It Works:**
+1. **Choosing Your Money:** You can pick if you want to see cryptocurrency prices in US dollars, Bitcoin, or Ethereum.
+
+2. **Picking Cryptos:** There are many different cryptocurrencies out there, and you can choose which ones you're interested in.
+
+3. **Seeing the Data:** You can see the prices and other details of the cryptocurrencies you've picked in a neat table.
+
+4. **Checking Changes:** You can also check how much the prices have gone up or down in the last seven days, 24 hours, or just one hour.
+
+5. **Sorting:** If you want, you can sort the data to easily find the best or worst performers.
+
+6. **Pretty Charts:** There are colorful charts that show you the price changes, making it easy to understand.
+
+**Behind the Scenes:**
+- The website uses special computer code to get the latest cryptocurrency data from the internet.
+
+- It's organized into three parts: a sidebar for settings, a data table for details, and colorful charts for visualizing data.
+
+- The code uses different computer tools to make all this happen, like Streamlit for the web, Matplotlib for charts, and more.
+
+So, it's like a handy tool to keep an eye on cryptocurrency prices and understand how they're changing. Enjoy exploring the world of digital money!
