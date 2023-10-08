@@ -52,7 +52,7 @@ col2, col3 = st.columns((2, 1))
 
 # ---------------------------------#
 # Sidebar + Main panel
-col1.markdown(''':violet[Input Options]''')
+col1.markdown('''**:violet[Input Options]**''')
 
 ## Sidebar - Currency price unit
 currency_price_unit = col1.selectbox('Select currency for price', ('USD', 'BTC', 'ETH'))
