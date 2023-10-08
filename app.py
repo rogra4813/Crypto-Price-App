@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 import base64
 import matplotlib.pyplot as plt
-import requests  # Added requests library
+import requests
 
 # ---------------------------------#
 # New feature (make sure to upgrade your streamlit library)
@@ -39,9 +39,9 @@ st.subheader(
 # About
 expander_bar = st.expander("**About**")
 expander_bar.markdown("""
-***:orange[Usage:]*** This web application retrieves cryptocurrency prices for the top 100 cryptocurrencies from CoinMarketCap. Users can select a currency for price comparison, choose cryptocurrencies to display, and sort data as needed. It also allows users to search for a specific cryptocurrency and view a Bar plot of % Price Change of its historical data.
+*:orange[Usage:]* This web application retrieves cryptocurrency prices for the top 100 cryptocurrencies from CoinMarketCap. Users can select a currency for price comparison, choose cryptocurrencies to display, and sort data as needed. It also allows users to search for a specific cryptocurrency and view a candlestick chart of its historical data.
 
-**:orange[Created By:]** :blue[Aditya Singh Amber]  from the B.C.A course at Jeevandeep Mahavidyalya.
+*:orange[Created By:]* :blue[Aditya Singh Amber]  from the B.C.A course at Jeevandeep Mahavidyalya.
 """)
 
 # ---------------------------------#
@@ -60,9 +60,7 @@ currency_price_unit = col1.selectbox('Select currency for price', ('USD', 'BTC',
 # Enter your CoinMarketCap API key here
 api_key = '58c2d26e-6b17-4a26-933b-625fef84e704'  # Replace with your actual API key
 
-
 # Make API requests to CoinMarketCap
-@st.cache_data
 def load_data():
     # Define the API URL
     api_url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
@@ -121,7 +119,6 @@ def load_data():
 
     return df
 
-
 df = load_data()
 
 ## Sidebar - Cryptocurrency selections
@@ -146,14 +143,12 @@ col2.subheader('Price Data of Selected Cryptocurrency')
 col2.write(f'Data Dimension: {df_selected_coin.shape[0]} rows and {df_selected_coin.shape[1]} columns.')
 col2.dataframe(df_coins)
 
-
 # Create a function to download CSV data
 def download_csv(df):
     csv = df.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()  # Convert to base64
     href = f'data:file/csv;base64,{b64}'  # Data URI
     return href
-
 
 # Display a download button for CSV data
 csv_data = download_csv(df_selected_coin)
