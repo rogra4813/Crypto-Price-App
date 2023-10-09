@@ -21,7 +21,7 @@ st.set_page_config(
     menu_items={
         'Get Help': 'https://github.com/ASAinit',
         'Report a bug': "https://github.com/ASAinit",
-        'About': "#This web application retrieves cryptocurrency prices for the top 100 cryptocurrencies from CoinMarketCap. Users can select a currency for price comparison, choose cryptocurrencies to display, and sort data as needed. It also allows users to search for a specific cryptocurrency and view a candlestick chart of its historical data."
+        'About': "#This web application retrieves cryptocurrency prices for the top 100 cryptocurrencies from CoinMarketCap. Users can select a currency for price comparison, choose cryptocurrencies to display, and sort data as needed. It also allows users to search for a specific cryptocurrency and view a Bar plot of % Price Change chart of its historical data."
     }
 )
 
