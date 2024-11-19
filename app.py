@@ -27,9 +27,9 @@ st.set_page_config(
 
 # ---------------------------------#
 # Title
-image = Image.open('logo.jpg')
+#image = Image.open('logo.jpg')
 
-st.image(image, width=600)
+#st.image(image, width=600)
 
 st.header('Crypto Price App', divider='rainbow')
 st.subheader(
